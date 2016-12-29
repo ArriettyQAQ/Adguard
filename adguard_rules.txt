@@ -1,8 +1,8 @@
 ﻿! Title: 南柯自用规则
 ! Description: 适用于Adguard的自用规则
-! Last Modified: 2016/12/20 04:12:39
+! Last Modified: 2016/12/30 03:23:13
 ! Homepage: http://www.maxwav.com
-! Version: 2016.12.20
+! Version: 2016.12.30
 ! 规则说明: 这是一个自用过滤器，作为Esay Chinalist规则的补充使用
 ! 文本编码: UTF-8 BOM
 ! --------------------------------------------------------------------------- !
