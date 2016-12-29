@@ -1,0 +1,221 @@
+﻿! Title: 南柯自用规则
+! Description: 适用于Adguard的自用规则
+! Last Modified: 2016/12/20 04:12:39
+! Homepage: http://www.maxwav.com
+! Version: 2016.12.20
+! 规则说明: 这是一个自用过滤器，作为Esay Chinalist规则的补充使用
+! 文本编码: UTF-8 BOM
+! --------------------------------------------------------------------------- !
+! ---------------------------------常用网站---------------------------------- !
+! --------------------------------------------------------------------------- !
+! [登陆前]百度首页
+baidu.com###ftCon
+baidu.com###u1 > A.mnav:first-child
+baidu.com###u1 > A.mnav:nth-child(2)
+baidu.com###u1 > A.mnav:nth-child(3)
+
+! [登陆后]百度首页
+baidu.com###u_sp > A.mnav:first-child
+baidu.com###u_sp > A.mnav:nth-child(2)
+baidu.com###u_sp > A.mnav:nth-child(3)
+baidu.com###s_upfunc_menus
+baidu.com###s_wrap
+baidu.com###bottom_container
+baidu.com###s_top_wrap
+
+! 百度分享
+||bdimg.share.baidu.com^
+
+! 微博登陆按钮
+weibo.com###pl_login_form > DIV.login_innerwrap > DIV.info_list.other_login.clearfix:last-child > DIV.other_login_list.W_fl:last-child > IFRAME:first-child
+weibo.com##.icon_yidong.cp_logo
+weibo.com##.icon_tianyi.cp_logo
+weibo.com##.icon_360.cp_logo
+weibo.com##.icon_unicom.cp_logo
+weibo.com##.icon_baidu.cp_logo
+
+! ZD423首页http://www.zdfans.com/
+zdfans.com##SPAN[style="margin:0px 0px 0px 244px;font-size:16px;font-weight:bold"]
+
+! 百度网盘
+pan.baidu.com##.dlg-hd-arrow,.module-canvas,.dlg-hd,.strong-warn-panel,.tips-bg.newhandTips3-bg,#activateGuidePopupOuter,#wizard-functions-intro
+
+! 京东首页
+jd.com###top-banner
+
+! TechWeb整站http://www.techweb.com.cn/tele/2015-09-17/2203441.shtml
+||techweb.com.cn/static/img/aliyun
+
+! 闲鱼https://2.taobao.com
+2.taobao.com##.download-layer
+2.taobao.com##.mau-guide
+
+! 惠惠网
+huihui.cn###loginGuide
+
+! 搜狐畅言
+mt.sohu.com###changyan_floatbar_wrapper
+
+! 多玩
+duowan.com##div#dw-live-tips
+duowan.com##DIV[style="width:980px;height:90px;overflow:hidden;margin:0 auto 10px"]
+duowan.com###mbbs-qrcode
+||img4.dwstatic.com/www/qrcode.png
+
+! CCAV1
+ccav1.com###widget_default,#widget_250,#widget_25060ad
+
+! greasyfork脚本站
+||google-analytics.com/analytics.js$third-party
+||projectwonderful.com^$third-party
+||newrelic.com^$third-party
+
+! 迅影网
+xunyingwang.com##.modal-backdrop.fade.in
+
+! 直销之家
+kt.zx85.cn###swt-body
+
+! 战旗直播
+zhanqi.tv##.liveMessage.clearfix.js-area-layer
+zhanqi.tv##.activity-show.js-activity-show
+
+! YY直播
+yy.com###rbappend
+yy.com###topYYue
+
+! UU898浮窗
+uu898.com###game237
+uu898.com###game150
+
+! 5173
+s.5173.com##.horn_main
+
+! 斗鱼直播
+douyu.com###task_lead_cont
+douyutv.com###task_lead_cont
+
+! 闲鱼
+2.taobao.com##.download-layer
+
+! 太平洋电脑网
+pconline.com.cn###Jsc8
+
+! QQ邮箱漂流瓶右侧
+set3.mail.qq.com###PLPNormal
+
+! QQ快捷登录去除多余权限勾选
+! |http://graph.qq.com/$s@</html>@<script>document.getElementById('select_all').click();</script></html>@
+
+! 网易爱玩网
+play.163.com###fixbl
+img1.cache.netease.com/game/img15/apppush/img/app-lbad.png
+
+! 远景论坛
+!||bbs.pcbeta.com$replace=/{padding:9px;width:980px;height:437px;/{padding:9px;width:980px;height:248px;/
+!||bbs.pcbeta.com/forum-$replace=/<div style="clear:both;margin:0 auto;padding:1px;width:960px;height:91px;background:#fff;border:9px solid #EDEEF0;">/<div style="display:none">/
+!||bbs.pcbeta.com/viewthread$replace=/{width:980px; position:relative; height:1??px;/{width:980px; position:relative; height:0px;/
+
+! 剑网叁配置器
+j3pz.com##.col-xs-12.col-sm-4 > .hidden-xs
+! --------------------------------------------------------------------------- !
+! ---------------------------------福利网站---------------------------------- !
+! --------------------------------------------------------------------------- !
+! 福利吧
+fuliba.net##A[href="http://mp.weixin.qq.com/s?__biz=MzA3MzU1NjExMg==&mid=211397739&idx=1&sn=63287e89f099e76e5a4e145693beea94#rd \a "]
+
+! 微拍福利
+||iayay.com/wp-content/uploads/2015/10/*
+||luguomei.com/wp-content/uploads/2015/03/*
+||vipjs.csad.cc^
+vvvgif.com###text-4,#text-5,#text-8,#text-9,#jtheme-ad-2,#jtheme-ad-3,#jtheme-ad-5,#jtheme-ad-7,.border-sep.widget.widget_border.masonry-brick,.border-sep.widget.widget_border
+
+! http://www.joi18.com
+||syndication.exoclick.com^
+||joi18.com/aa/images/*
+||joi18.com/images/*
+joi18.com##.abs
+joi18.com##A[href="/api/download.php?id=aHR0c24TmxJQTU="]
+joi18.com##.abs
+joi18.com###exoAdInner
+joi18.com###submenu
+joi18.com##DIV[style="text-align:center; width:690px;"]
+
+! http://cn.smutcam.com/
+||i.bongacams.com/promotions/vip/*
+||i.bongacash.com/wl/banner/*
+cn.smutcam.com##.banner_top_index.bc_promo.b_pos
+cn.smutcam.com##.adfooter
+cn.smutcam.com##.adleft
+
+! 草榴http://www.t66y.com
+||videowood.*/assets/js/popup$script
+||videowood.*/assets/js/player.js
+up2stream.com##.vjs-overlay.vjs-overlay-bottom-left
+
+! www.91porn.com
+91porn.com###topbar
+
+! https://www.kali.tv/
+||cdn.kali.tv/ad/*
+||kalitv.duoshuo.com/api/threads/*
+
+! www.ilbeya5.com
+ilbeya5.com###wr3_gif0,#wr3_gif1,#wr3_gif2,#wr3_gif3,#wr3_gif4,#wr3_gif5,#slidebox,#cmt_js,.pc-adbox
+
+! www.avtb55.com
+##.container > .ads
+
+
+! 第一会所www.sis001.com
+sis001.com###ad_text
+sis001.com###ad_headerbanner
+
+! 见光死
+|http://*/##ads-player,.ads
+##.ads-player
+##.hidden-sm.hidden-xs.right
+###content > DIV.col-xs.col-sm-12.col-md-10:last-child > DIV.panel.panel-default:nth-child(3) > DIV.panel-body.panel-padding:last-child > A:first-child
+
+
+! --------------------------------------------------------------------------- !
+! ---------------------------------QQ空间------------------------------------ !
+! --------------------------------------------------------------------------- !
+! 左侧上半部分应用列表展开
+user.qzone.qq.com###tab_switch
+||user.qzone.qq.com$replace=/<ul id="tab_hide_list" class="sn-list none">/<ul id="tab_hide_list" class="sn-list">/
+! 左侧下半部分应用列表展开
+!user.qzone.qq.com###tab_applist_switch
+!||user.qzone.qq.com$replace=/<ul id="tab_applist_hide" class="sn-list none">/<ul id="tab_applist_hide" class="sn-list">/
+! [左侧]直播广场红点提示
+user.qzone.qq.com###tab_menu_mv > DIV.qz-right:nth-child(2)
+! [左侧]导航栏游戏列表
+user.qzone.qq.com###tab_applist_show
+! [右侧]签到按钮上方广告
+user.qzone.qq.com##.ck-act
+! [右侧]大家都在看
+user.qzone.qq.com###QM_Container_100002
+! [右侧]谁看过我Tips
+user.qzone.qq.com##.fn_accessLog_tips.bg2.bor2
+! [右侧]谁看过我 QQ空间独立版
+user.qzone.qq.com##.ui-dl-inner
+! [右侧]谁看过我 QQ空间独立版图标
+user.qzone.qq.com##.ui-icon.icon-qzphone.qz-app-flag
+! [右下]热点按钮
+user.qzone.qq.com###site_hot_btn
+! [空间动态]QQ空间推广
+qzone.qq.com##div.feed-hot-bar
+qzone.qq.com##div.f-vqz-ad
+! [说说]底部图片广告
+cnc.qzs.qq.com###bottom-sponsor
+! [左下]左下侧广告2幅
+user.qzone.qq.com###QM_Container_11
+! [相册]相片详情广告
+qzone.qq.com###js-qq-ad
+! [签到]下方广告
+user.qzone.qq.com###QM_Container_100005
+! --------------------------------------------------------------------------- !
+! ---------------------------------客户端------------------------------------ !
+! --------------------------------------------------------------------------- !
+! YY拦截下载报毒播放器
+||yydl.duowan.com/client/yyplayer/
