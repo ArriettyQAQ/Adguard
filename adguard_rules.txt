@@ -1,8 +1,8 @@
 ﻿! Title: 南柯自用规则
 ! Description: 适用于Adguard的自用规则
-! Last Modified: 2017/01/08 03:43:17
+! Last Modified: 2017/01/19 01:19:17
 ! Homepage: http://www.maxwav.com
-! Version: 2017.1.8
+! Version: 2017.1.19
 ! 规则说明: 这是一个自用过滤器，作为Esay Chinalist规则的补充使用
 ! 文本编码: UTF-8 BOM
 ! --------------------------------------------------------------------------- !
@@ -112,9 +112,9 @@ play.163.com###fixbl
 img1.cache.netease.com/game/img15/apppush/img/app-lbad.png
 
 ! 远景论坛
-!||bbs.pcbeta.com$replace=/{padding:9px;width:980px;height:437px;/{padding:9px;width:980px;height:248px;/
-!||bbs.pcbeta.com/forum-$replace=/<div style="clear:both;margin:0 auto;padding:1px;width:960px;height:91px;background:#fff;border:9px solid #EDEEF0;">/<div style="display:none">/
-!||bbs.pcbeta.com/viewthread$replace=/{width:980px; position:relative; height:1??px;/{width:980px; position:relative; height:0px;/
+||bbs.pcbeta.com$replace=/{padding:9px;width:980px;height:437px;/{padding:9px;width:980px;height:248px;/
+||bbs.pcbeta.com/forum-$replace=/<div style="clear:both;margin:0 auto;padding:1px;width:960px;height:91px;background:#fff;border:9px solid #EDEEF0;">/<div style="display:none">/
+||bbs.pcbeta.com/viewthread$replace=/{width:980px; position:relative; height:1??px;/{width:980px; position:relative; height:0px;/
 
 ! 剑网叁配置器
 j3pz.com##.col-xs-12.col-sm-4 > .hidden-xs
