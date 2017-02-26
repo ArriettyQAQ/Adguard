@@ -185,11 +185,11 @@ sis001.com###ad_headerbanner
 ! ---------------------------------QQ空间------------------------------------ !
 ! --------------------------------------------------------------------------- !
 ! 左侧上半部分应用列表展开
-!user.qzone.qq.com###tab_switch
-!||user.qzone.qq.com$replace=/<ul id="tab_hide_list" class="sn-list none">/<ul id="tab_hide_list" class="sn-list">/
+user.qzone.qq.com###tab_switch
+||user.qzone.qq.com$replace=/<ul id="tab_hide_list" class="sn-list none">/<ul id="tab_hide_list" class="sn-list">/
 ! 左侧下半部分应用列表展开
-!user.qzone.qq.com###tab_applist_switch
-!||user.qzone.qq.com$replace=/<ul id="tab_applist_hide" class="sn-list none">/<ul id="tab_applist_hide" class="sn-list">/
+user.qzone.qq.com###tab_applist_switch
+||user.qzone.qq.com$replace=/<ul id="tab_applist_hide" class="sn-list none">/<ul id="tab_applist_hide" class="sn-list">/
 ! [左侧]直播广场红点提示
 user.qzone.qq.com###tab_menu_mv > DIV.qz-right:nth-child(2)
 ! [左侧]导航栏游戏列表
