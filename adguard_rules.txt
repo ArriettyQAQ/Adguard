@@ -1,7 +1,7 @@
 ﻿! Title: 南柯自用规则
 ! Description: 适用于 Adguard 的自用规则
 ! Last Modified: 2017/02/26 23:03:17
-! Homepage: http://www.maxwav.com
+! Homepage: https://github.com/ChuHuaiJin/Adguard/
 ! Version: 2017.2.26
 ! 规则说明: 这是一个仅做自用的过滤器，作为 Esay Chinalist 规则的补充使用，不接受用户请求！
 ! 鸣谢: 幽涧山泉 抵达怀念 xwhyc（排名不分先后）
