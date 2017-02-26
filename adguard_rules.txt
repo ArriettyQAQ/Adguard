@@ -2,7 +2,7 @@
 ! Description: 适用于Adguard的自用规则
 ! Last Modified: 2017/02/26 16:00:17
 ! Homepage: http://www.maxwav.com
-! Version: 2017.1.19
+! Version: 2017.2.26
 ! 规则说明: 这是一个自用过滤器，作为Esay Chinalist规则的补充使用
 ! 文本编码: UTF-8 BOM
 ! --------------------------------------------------------------------------- !
