@@ -1,8 +1,8 @@
 ﻿! Title: 南柯自用规则
 ! Description: 适用于 Adguard 的自用规则
-! Last Modified: 2017/02/26 23:03:17
+! Last Modified: 2017/02/27 06/19/43
 ! Homepage: https://github.com/ChuHuaiJin/Adguard/
-! Version: 2017.2.26
+! Version: 2017.2.27
 ! 规则说明: 这是一个仅做自用的过滤器，作为 Esay Chinalist 规则的补充使用，不接受用户请求！
 ! 鸣谢: 幽涧山泉 抵达怀念 xwhyc（排名不分先后）
 ! 文本编码: UTF-8 BOM
@@ -157,9 +157,9 @@ t66y.com##.tips
 ||videowood.*/assets/js/popup$script
 ||videowood.*/assets/js/player.js
 up2stream.com##.vjs-overlay.vjs-overlay-bottom-left
-datoporn.com$$script[data-cfasync="false"]
+!datoporn.com$$script[data-cfasync="false"]
 datoporn.com$$div[onclick="c()"]
-datoporn.com$$script[tag-content="hilltopads"]
+!datoporn.com$$script[tag-content="hilltopads"]
 
 
 ! www.91porn.com
