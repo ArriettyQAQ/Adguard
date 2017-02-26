@@ -1,6 +1,6 @@
 ﻿! Title: 南柯自用规则
 ! Description: 适用于Adguard的自用规则
-! Last Modified: 2017/01/19 01:19:17
+! Last Modified: 2017/02/26 16:00:17
 ! Homepage: http://www.maxwav.com
 ! Version: 2017.1.19
 ! 规则说明: 这是一个自用过滤器，作为Esay Chinalist规则的补充使用
@@ -33,6 +33,9 @@ weibo.com##.icon_tianyi.cp_logo
 weibo.com##.icon_360.cp_logo
 weibo.com##.icon_unicom.cp_logo
 weibo.com##.icon_baidu.cp_logo
+
+! 知乎登陆页默认显示社交账号登陆按钮
+||zhihu.com$replace=/<div class="sns-buttons">/<div class="sns-buttons is-visible" style="visibility: visible;">/
 
 ! ZD423首页http://www.zdfans.com/
 zdfans.com##SPAN[style="margin:0px 0px 0px 244px;font-size:16px;font-weight:bold"]
