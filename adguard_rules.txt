@@ -1,6 +1,6 @@
 ﻿! Title: 南柯自用规则
 ! Description: 适用于 Adguard 的自用规则
-! Last Modified: 2017/03/01 18/44/12
+! Last Modified: 2017/03/01 20/20/53
 ! Homepage: https://github.com/ChuHuaiJin/Adguard/
 ! Version: 2017.3.1
 ! 规则说明: 这是一个仅做自用的过滤器，作为 Esay Chinalist 规则的补充使用，不接受用户请求！
@@ -109,7 +109,7 @@ pconline.com.cn###Jsc8
 set3.mail.qq.com###PLPNormal
 
 ! QQ快捷登录去除多余权限勾选
-! |http://graph.qq.com/$s@</html>@<script>document.getElementById('select_all').click();</script></html>@
+||graph.qq.com$replace=/<\/html>/<script>document.getElementById('select_all').click();<\/script><\/html>/
 
 ! 网易爱玩网
 play.163.com###fixbl
