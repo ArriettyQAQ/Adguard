@@ -1,8 +1,8 @@
 ﻿! Title: 南柯自用规则
 ! Description: 适用于 Adguard 的自用规则
-! Last Modified: 2017/02/27 06/19/43
+! Last Modified: 2017/03/01 18/44/12
 ! Homepage: https://github.com/ChuHuaiJin/Adguard/
-! Version: 2017.2.27
+! Version: 2017.3.1
 ! 规则说明: 这是一个仅做自用的过滤器，作为 Esay Chinalist 规则的补充使用，不接受用户请求！
 ! 鸣谢: 幽涧山泉 抵达怀念 xwhyc（排名不分先后）
 ! 文本编码: UTF-8 BOM
@@ -154,12 +154,8 @@ cn.smutcam.com##.adleft
 
 ! 草榴http://www.t66y.com
 t66y.com##.tips
-||videowood.*/assets/js/popup$script
-||videowood.*/assets/js/player.js
 up2stream.com##.vjs-overlay.vjs-overlay-bottom-left
-!datoporn.com$$script[data-cfasync="false"]
-datoporn.com$$div[onclick="c()"]
-!datoporn.com$$script[tag-content="hilltopads"]
+
 
 
 ! www.91porn.com
@@ -224,6 +220,23 @@ user.qzone.qq.com###QM_Container_11
 qzone.qq.com###js-qq-ad
 ! [签到]下方广告
 user.qzone.qq.com###QM_Container_100005
+! --------------------------------------------------------------------------- !
+! ---------------------------------播放器------------------------------------ !
+! --------------------------------------------------------------------------- !
+! vidlox.tv以下两条规则任意一条都可以过滤播放器弹窗
+||vidlox.tv$replace=/var .*?popup/fuckAD/
+!||vidlox.tv$replace=/setTimeout.*?popup//
+
+! datoporn.com以下四条规则任意一条都可以过滤播放器弹窗
+||datoporn.com$$div[onclick="c()"]
+!||datoporn.com$$script[data-cfasync="false"]
+!||datoporn.com$$script[tag-content="hilltopads"]
+!||datoporn.com$replace=/<div id="a".*?<\/div>//
+
+! videowood网站播放器弹窗
+||videowood.*/assets/js/popup$script
+||videowood.*/assets/js/player.js
+
 ! --------------------------------------------------------------------------- !
 ! ---------------------------------客户端------------------------------------ !
 ! --------------------------------------------------------------------------- !
