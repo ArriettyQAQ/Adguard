@@ -123,6 +123,10 @@ img1.cache.netease.com/game/img15/apppush/img/app-lbad.png
 
 ! 剑网叁配置器
 j3pz.com##.col-xs-12.col-sm-4 > .hidden-xs
+
+! 去除各种ckplayer播放器里面的滚动广告
+*/player/player.js$replace=/advmarquee: escape.*?\)\,/advmarquee: escape\(''\)\,/
+*/html/ckplayer/ckplayer.js$replace=/advmarquee: escape.*?\)\,/advmarquee: escape\(''\)\,/
 ! --------------------------------------------------------------------------- !
 ! ---------------------------------福利网站---------------------------------- !
 ! --------------------------------------------------------------------------- !
