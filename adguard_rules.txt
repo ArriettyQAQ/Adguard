@@ -1,6 +1,6 @@
 ﻿! Title: 南柯自用规则
 ! Description: 适用于 Adguard 的自用规则
-! Last Modified: 2017/03/04 19/44/31
+! Last Modified: 2017/05/19 21:45:05
 ! Homepage: https://github.com/ChuHuaiJin/Adguard/
 ! Version: 2017.3.4
 ! 规则说明: 这是一个仅做自用的过滤器，作为 Esay Chinalist 规则的补充使用，不接受用户请求！
@@ -178,9 +178,7 @@ ilbeya5.com###wr3_gif0,#wr3_gif1,#wr3_gif2,#wr3_gif3,#wr3_gif4,#wr3_gif5,#slideb
 sis001.com###ad_text
 sis001.com###ad_headerbanner
 
-! 见光死
-|http://*/##ads-player,.ads
-##.ads-player
+
 ##.hidden-sm.hidden-xs.right
 ###content > DIV.col-xs.col-sm-12.col-md-10:last-child > DIV.panel.panel-default:nth-child(3) > DIV.panel-body.panel-padding:last-child > A:first-child
 
@@ -242,6 +240,10 @@ user.qzone.qq.com###QM_Container_100005
 ! 去除各种ckplayer播放器里面的滚动广告
 */player/player.js$replace=/advmarquee: escape.*?\)\,/advmarquee: escape\(''\)\,/
 */html/ckplayer/ckplayer.js$replace=/advmarquee: escape.*?\)\,/advmarquee: escape\(''\)\,/
+
+! 常见H网播放器广告
+|http://*/##ads-player,.ads
+##.ads-player
 ! --------------------------------------------------------------------------- !
 ! ---------------------------------客户端------------------------------------ !
 ! --------------------------------------------------------------------------- !
