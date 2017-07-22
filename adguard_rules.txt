@@ -26,7 +26,7 @@ baidu.com###bottom_container
 baidu.com###s_top_wrap
 
 ! 百度分享
-||bdimg.share.baidu.com^
+||bdimg.share.baidu.com/*$empty
 
 ! 去除多余的微博登陆按钮，只保留QQ快捷登陆
 weibo.com###pl_login_form > DIV.login_innerwrap > DIV.info_list.other_login.clearfix:last-child > DIV.other_login_list.W_fl:last-child > IFRAME:first-child
@@ -125,16 +125,11 @@ j3pz.com##.col-xs-12.col-sm-4 > .hidden-xs
 fuliba.net##A[href="http://mp.weixin.qq.com/s?__biz=MzA3MzU1NjExMg==&mid=211397739&idx=1&sn=63287e89f099e76e5a4e145693beea94#rd \a "]
 
 ! 微拍福利
-||iayay.com/wp-content/uploads/2015/10/*
-||luguomei.com/wp-content/uploads/2015/03/*
-||vipjs.csad.cc^
+||iayay.com/wp-content/uploads/2015/10/*$empty||luguomei.com/wp-content/uploads/2015/03/*$empty||vipjs.csad.cc^$empty
 vvvgif.com###text-4,#text-5,#text-8,#text-9,#jtheme-ad-2,#jtheme-ad-3,#jtheme-ad-5,#jtheme-ad-7,.border-sep.widget.widget_border.masonry-brick,.border-sep.widget.widget_border
 
 ! http://www.joi18.com
-||syndication.exoclick.com^
-||joi18.com/aa/images/*
-||joi18.com/images/*
-joi18.com##.abs
+||syndication.exoclick.com^$empty||joi18.com/aa/images/*$empty||joi18.com/images/*$emptyjoi18.com##.abs
 joi18.com##A[href="/api/download.php?id=aHR0c24TmxJQTU="]
 joi18.com##.abs
 joi18.com###exoAdInner
@@ -142,9 +137,7 @@ joi18.com###submenu
 joi18.com##DIV[style="text-align:center; width:690px;"]
 
 ! http://cn.smutcam.com/
-||i.bongacams.com/promotions/vip/*
-||i.bongacash.com/wl/banner/*
-cn.smutcam.com##.banner_top_index.bc_promo.b_pos
+||i.bongacams.com/promotions/vip/*$empty||i.bongacash.com/wl/banner/*$emptycn.smutcam.com##.banner_top_index.bc_promo.b_pos
 cn.smutcam.com##.adfooter
 cn.smutcam.com##.adleft
 
@@ -158,9 +151,7 @@ up2stream.com##.vjs-overlay.vjs-overlay-bottom-left
 91porn.com###topbar
 
 ! https://www.kali.tv/
-||cdn.kali.tv/ad/*
-||kalitv.duoshuo.com/api/threads/*
-
+||cdn.kali.tv/ad/*$empty||kalitv.duoshuo.com/api/threads/*$empty
 ! www.ilbeya5.com
 ilbeya5.com###wr3_gif0,#wr3_gif1,#wr3_gif2,#wr3_gif3,#wr3_gif4,#wr3_gif5,#slidebox,#cmt_js,.pc-adbox
 
