@@ -1,9 +1,9 @@
 ! Title: 南柯自用规则
 ! Description: 适用于 Adguard 的自用规则
-! Last Modified: 2017/07/22 17:01:12
+! Last Modified: 2017/07/22 23:29:33
 ! Homepage: https://github.com/ChuHuaiJin/Adguard/
 ! Version: 2017.7.22
-! 规则说明: 这是一个仅做自用的过滤器，作为 Esay Chinalist 规则的补充使用，不接受用户请求！
+! 规则说明: 这是一个仅做自用的过滤器，作为 Esay Chinalist 规则的补充使用，不接受用户请求！需要过滤客户端广告的，请查阅规则注释，会告诉你过滤哪个程序进程。
 ! 鸣谢: 幽涧山泉 抵达怀念 xwhyc（排名不分先后）
 ! 文本编码: UTF-8
 ! --------------------------------------------------------------------------- !
@@ -236,6 +236,47 @@ user.qzone.qq.com###QM_Container_100005
 ! --------------------------------------------------------------------------- !
 ! YY拦截下载报毒播放器
 ||yydl.duowan.com/client/yyplayer/*$empty
+
+! 迅雷9广告（请添加Thunder.exe到过滤进程里）
+xl9.xunlei.com/*$empty
+niu.xunlei.com/*$empty
+jsq.xunlei.com/*$empty
+yuedu.xunlei.com/*$empty
+mobile.xunlei.com/*$empty
+jiuwo.xunlei.com/*$empty
+xzb.xunlei.com/*$empty
+red.xunlei.com/*$empty
+v.xunlei.com/*$empty
+xl7.xunlei.com/*$empty
+leiyanstatic.xunlei.com^$empty
+p4pstatic.xunlei.com/*$empty
+advstat.xunlei.com/*$empty
+cl.kankan.xunlei.com/*$empty
+cop.my.xunlei.com/*$empty
+kkpgv.xunlei.com/*$empty
+mtips.xunlei.com/*$empty
+recommend.xunlei.com/*$empty
+tracker.movie.xunlei.com/*$empty
+union.xunlei.com/*$empty
+wy.xunlei.com/*$empty
+areainfo.xunlei.com/*$empty
+client.stat.xunlei.com/*$empty
+gouwu.vip.xunlei.com/*$empty
+hezuo.down.xunlei.com/*$empty
+iimg.xunlei.com/*$empty
+kkpgv2.xunlei.com/*$empty
+leiyanstatic.xunlei.com/*$empty
+mediapv.xunlei.com/*$empty
+pv.kankan.stat.xunlei.com/*$empty
+res.stat.xunlei.com/*$empty
+stat.xunlei.com/*$empty
+static.soft.xunlei.com/*$empty
+thunderqtypv.union.xunlei.com/*$empty
+tj.xunlei.com/*$empty
+web.stat.xunlei.com/*$empty
+websts.xunlei.com/*$empty
+xmlconf.client.xunlei.com/*$empty
+pc.xunlei.com/*$empty
 
 ! --------------------------------------------------------------------------- !
 ! ---------------------------------视频站------------------------------------ !
