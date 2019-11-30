@@ -1,8 +1,8 @@
 ! Title: 南柯自用规则
 ! Description: 适用于 Adguard 的自用规则
-! Last Modified: 2017/07/28 23:07:05
+! Last Modified: 2019/11/30 18:33:05
 ! Homepage: https://github.com/ChuHuaiJin/Adguard/
-! Version: 2017.7.28
+! Version: 2019.11.30
 ! 规则说明: 这是一个仅做自用的过滤器，作为 Esay Chinalist 规则的补充使用，不接受用户请求！需要过滤客户端广告的，请查阅规则注释，会告诉你过滤哪个程序进程。
 ! 鸣谢: 幽涧山泉 抵达怀念 xwhyc（排名不分先后）
 ! 文本编码: UTF-8
@@ -35,9 +35,6 @@ weibo.com##.icon_tianyi.cp_logo
 weibo.com##.icon_360.cp_logo
 weibo.com##.icon_unicom.cp_logo
 weibo.com##.icon_baidu.cp_logo
-
-! ZD423首页http://www.zdfans.com/
-zdfans.com##SPAN[style="margin:0px 0px 0px 244px;font-size:16px;font-weight:bold"]
 
 ! 百度网盘
 pan.baidu.com##.dlg-hd-arrow,.module-canvas,.dlg-hd,.strong-warn-panel,.tips-bg.newhandTips3-bg,#activateGuidePopupOuter,#wizard-functions-intro
@@ -172,41 +169,33 @@ sis001.com###ad_headerbanner
 ! ---------------------------------QQ空间------------------------------------ !
 ! --------------------------------------------------------------------------- !
 ! 左侧上半部分应用列表展开
-user.qzone.qq.com###tab_switch
-||user.qzone.qq.com$replace=/<ul id="tab_hide_list" class="sn-list none">/<ul id="tab_hide_list" class="sn-list">/
+qzone.qq.com###tab_switch
+qzone.qq.com$replace=/<ul id="tab_hide_list" class="sn-list none">/<ul id="tab_hide_list" class="sn-list">/
 ! 左侧下半部分应用列表展开
-user.qzone.qq.com###tab_applist_switch
-||user.qzone.qq.com$replace=/<ul id="tab_applist_hide" class="sn-list none">/<ul id="tab_applist_hide" class="sn-list">/
-! [左侧]腾讯课堂
-user.qzone.qq.com###tab_menu_list > li:last-child
-! [左侧]直播广场红点提示
-user.qzone.qq.com###tab_menu_mv > DIV.qz-right:nth-child(2)
-! [左侧]导航栏游戏列表
-user.qzone.qq.com###tab_applist_show
-user.qzone.qq.com###tab_applist_hide
-! [右侧]签到按钮上方广告
-user.qzone.qq.com##.ck-act
+qzone.qq.com###tab_applist_switch
+qzone.qq.com$replace=/<ul id="tab_applist_hide" class="sn-list none">/<ul id="tab_applist_hide" class="sn-list">/
+! [左侧]红点
+qzone.qq.com###tab_menu_mv > .qz-right
+! [左侧]企鹅辅导
+qzone.qq.com##.ke_gray
+! [左侧]游戏应用
+qzone.qq.com###tab_menu_list > li:nth-of-type(7)
+! [左侧]下部广告导航栏
+qzone.qq.com##.mod-side-nav-recently-used.mod-side-nav
 ! [右侧]大家都在看
-user.qzone.qq.com###QM_Container_100002
+qzone.qq.com###QM_Container_100002
 ! [右侧]谁看过我Tips
-user.qzone.qq.com##.fn_accessLog_tips.bg2.bor2
+qzone.qq.com##.fn_accessLog_tips.bg2.bor2
 ! [右侧]谁看过我 QQ空间独立版
-user.qzone.qq.com##.ui-dl-inner
+qzone.qq.com##.ui-dl-inner
 ! [右侧]谁看过我 QQ空间独立版图标
-user.qzone.qq.com##.ui-icon.icon-qzphone.qz-app-flag
-! [右下]热点按钮
-user.qzone.qq.com###site_hot_btn
-! [空间动态]QQ空间推广
-qzone.qq.com##div.feed-hot-bar
-qzone.qq.com##div.f-vqz-ad
-! [说说]底部图片广告
-cnc.qzs.qq.com###bottom-sponsor
-! [左下]左下侧广告2幅
-user.qzone.qq.com###QM_Container_11
-! [相册]相片详情广告
-qzone.qq.com###js-qq-ad
-! [签到]下方广告
-user.qzone.qq.com###QM_Container_100005
+qzone.qq.com##.ui-icon.icon-qzphone.qz-app-flag
+! [时间线]好友热播
+qzone.qq.com##f-single-top
+! [右下]热点
+qzone.qq.com###site_hot_btn
+! [时间线]推荐视频
+qzone.qq.com##f-single
 ! --------------------------------------------------------------------------- !
 ! ---------------------------------播放器------------------------------------ !
 ! --------------------------------------------------------------------------- !
@@ -231,70 +220,3 @@ user.qzone.qq.com###QM_Container_100005
 ! 常见H网播放器广告
 |http://*/##ads-player,.ads
 ##.ads-player
-! --------------------------------------------------------------------------- !
-! ---------------------------------客户端------------------------------------ !
-! --------------------------------------------------------------------------- !
-! YY拦截下载报毒播放器
-||yydl.duowan.com/client/yyplayer/*$empty
-
-! 迅雷9广告（请添加Thunder.exe到过滤进程里）
-xl9.xunlei.com/*$empty
-niu.xunlei.com/*$empty
-jsq.xunlei.com/*$empty
-yuedu.xunlei.com/*$empty
-mobile.xunlei.com/*$empty
-jiuwo.xunlei.com/*$empty
-xzb.xunlei.com/*$empty
-red.xunlei.com/*$empty
-v.xunlei.com/*$empty
-xl7.xunlei.com/*$empty
-leiyanstatic.xunlei.com^$empty
-p4pstatic.xunlei.com/*$empty
-advstat.xunlei.com/*$empty
-cl.kankan.xunlei.com/*$empty
-cop.my.xunlei.com/*$empty
-kkpgv.xunlei.com/*$empty
-mtips.xunlei.com/*$empty
-recommend.xunlei.com/*$empty
-tracker.movie.xunlei.com/*$empty
-union.xunlei.com/*$empty
-wy.xunlei.com/*$empty
-areainfo.xunlei.com/*$empty
-client.stat.xunlei.com/*$empty
-gouwu.vip.xunlei.com/*$empty
-hezuo.down.xunlei.com/*$empty
-iimg.xunlei.com/*$empty
-kkpgv2.xunlei.com/*$empty
-leiyanstatic.xunlei.com/*$empty
-mediapv.xunlei.com/*$empty
-pv.kankan.stat.xunlei.com/*$empty
-res.stat.xunlei.com/*$empty
-stat.xunlei.com/*$empty
-static.soft.xunlei.com/*$empty
-thunderqtypv.union.xunlei.com/*$empty
-tj.xunlei.com/*$empty
-web.stat.xunlei.com/*$empty
-websts.xunlei.com/*$empty
-xmlconf.client.xunlei.com/*$empty
-pc.xunlei.com/*$empty
-||static2.ssp.xunlei.com/$image
-
-! --------------------------------------------------------------------------- !
-! ---------------------------------视频站------------------------------------ !
-! --------------------------------------------------------------------------- !
-! 优酷默认启用html5播放和1080P
-|http://v.youku.com/*$replace=/<head>/<head><script type="text\/javascript">window.sessionStorage.setItem\("P_l_h5"\, true\);window.localStorage.setItem\("defaultVideoType"\, "mp4hd3"\)<\/script>/
-||ups.youku.com/ups/get.json$replace=/"vip":.*?\}/"vip":true\}/
-
-
-! --------------------------------------------------------------------------- !
-! --------------------------------页面改造----------------------------------- !
-! --------------------------------------------------------------------------- !
-! 必应翻译默认选择简体中文翻译结果
-||bing.com/translator$replace=/<\/head>/<\/head><script>document.cookie = "destLang=zh-CHS";<\/script>/
-
-! QQ快捷登录去除多余权限勾选
-||graph.qq.com$replace=/<\/html>/<script>document.getElementById('select_all').click();<\/script><\/html>/
-
-! 知乎登陆页默认显示社交账号登陆按钮
-||zhihu.com$replace=/<div class="sns-buttons">/<div class="sns-buttons is-visible" style="visibility: visible;">/
