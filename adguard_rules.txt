@@ -175,11 +175,8 @@ qzone.qq.com$replace=/<ul id="tab_hide_list" class="sn-list none">/<ul id="tab_h
 qzone.qq.com###tab_applist_switch
 qzone.qq.com$replace=/<ul id="tab_applist_hide" class="sn-list none">/<ul id="tab_applist_hide" class="sn-list">/
 ! [左侧]红点
-qzone.qq.com###tab_menu_mv > .qz-right
-! [左侧]企鹅辅导
-qzone.qq.com##.ke_gray
-! [左侧]游戏应用
 qzone.qq.com###tab_menu_list > li:nth-of-type(7)
+qzone.qq.com###tab_menu_mv > div.qz-right:nth-child(2)
 ! [左侧]下部广告导航栏
 qzone.qq.com##.mod-side-nav-recently-used.mod-side-nav
 ! [右侧]大家都在看
