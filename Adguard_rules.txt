@@ -1,5 +1,5 @@
 ! Title: 南柯自用规则
-! Description: 适用于 Adguard 的自用规则
+! Description: 适用于 Adguard 的自用规则，仅作为 AdGuard 基础过滤器、AdGuard 防跟踪保护过滤器和 AdGuard 中文过滤器搭配使用时的补充规则使用。
 ! Last Modified: 2020.12.14 13:50:49
 ! Homepage: https://github.com/ChuHuaiJin/Adguard/
 ! Version: 2020.12.14
