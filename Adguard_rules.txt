@@ -38,13 +38,13 @@ qzone.qq.com##f-single-top
 qzone.qq.com###site_hot_btn
 ! [时间线]推荐视频
 qzone.qq.com##f-single
-! 百度分享组件
-!||*/baiduShare^
-||xoyo.com/xassets/com/pf/baiduShare^
-
 ! --------------------------------------------------------------------------- !
 ! ---------------------------------常用网站------------------------------------ !
 ! --------------------------------------------------------------------------- !
+! xoyo.com
+||xoyo.com/xassets/com/pf/baiduShare^
+! 百度分享组件
+!||*/baiduShare^
 ! 远景论坛
 bbs.pcbeta.com$replace=/{padding:9px;width:980px;height:100%;/{padding:9px;width:980px;height:260px;/
 bbs.pcbeta.com$replace=/{padding:9px;width:980px;height:467px;/{padding:9px;width:980px;height:260px;/
