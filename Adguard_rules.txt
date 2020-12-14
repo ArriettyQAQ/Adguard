@@ -2,7 +2,7 @@
 ! Description: 适用于 Adguard 的自用规则，仅作为 AdGuard 基础过滤器、AdGuard 防跟踪保护过滤器和 AdGuard 中文过滤器搭配使用时的补充规则使用。
 ! Last Modified: 2020.12.14 15:27:37
 ! Homepage: https://github.com/ChuHuaiJin/Adguard/blob/master/Adguard_rules.txt
-! Version: 2020.12.14
+! Version: 1.0.0.0
 ! 规则说明: 这是一个自用的过滤器，仅作为 AdGuard 基础过滤器、AdGuard 防跟踪保护过滤器和 AdGuard 中文过滤器搭配使用时的补充规则使用，不接受用户请求！
 ! 鸣谢: 幽涧山泉 抵达怀念 xwhyc（排名不分先后）
 ! 文本编码: UTF-8
