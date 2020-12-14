@@ -55,3 +55,10 @@ hdsky.me##tr:nth-of-type(7)
 ||img.hdsky.me/images^
 ! https://pthome.net
 ||img.alicdn.com/imgextra^$domain=pthome.net
+! pornhub.com
+||pornhub.com$replace=/class="videos user-playlist"/class="videos user-playlist allRecommendedVideos"/
+||pornhub.com$replace=/>Load More</>Show less</
+cn.pornhub.com$replace=/>加载更多</>显示更少</
+||pornhub.com$replace=/js-relatedVideos relatedVideos/js-relatedVideos relatedVideos allRelatedVideos/
+||pornhub.com$replace=/>Load more related videos</>Show less related videos</
+cn.pornhub.com$replace=/>加载更多相关视频</>显示更少视频</
